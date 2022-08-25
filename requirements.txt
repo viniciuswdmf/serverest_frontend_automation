@@ -1,0 +1,8 @@
+behave
+pillow
+requests
+playwright
+allure-behave
+allure-python-commons
+faker
+mailosaur
