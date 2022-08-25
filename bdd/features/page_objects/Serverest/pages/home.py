@@ -23,9 +23,6 @@ class ServerestHome():
         context.page.click(body_elements['MENU_CONTA'])
         time.sleep(5)
 
-    def acessar_registro(self, context):
-        context.page.click(body_elements['MENU_REGISTRO'])
-
     def resetar_infos(self, context):
         context.page.click(body_elements['DROPDOWN_MENU'])
         time.sleep(3)

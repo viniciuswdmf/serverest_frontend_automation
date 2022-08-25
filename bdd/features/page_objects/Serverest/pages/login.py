@@ -12,7 +12,10 @@ class ServerestLogin():
     def acessar_site_login(self, context):
         context.page_helper.acessar(context, "")
 
-    def fazer_login_com_parametros(self, context, cpf, senha):
+    def acessar_cadastro(self, context):
+        context.page.click(login_elements['LINK_CADASTRO'])
+
+    def efetuar_login_valido(self, context, cpf, senha):
         context.page.fill(login_elements['INP_LOGIN'], cpf)
         context.page.fill(login_elements['INP_SENHA'], senha)
         context.page.click(login_elements['INP_BTN_LOGIN']) 
@@ -28,5 +31,5 @@ class ServerestLogin():
 
     def validar_login_incorreto(self, context, mensagem):
         locator = context.page.locator(body_elements['TOAST_ERRO'])
-        expect(locator).to_have_text(mensagem)
+        expect(locator).to_have_text("Cadastro realizado com sucesso")
 

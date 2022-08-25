@@ -1,6 +1,7 @@
 from playwright.sync_api import sync_playwright
 from features.page_objects.Serverest.serverest_page_index import *
 from features.helper.page_helper import *
+from features.fixtures.factory import *
 from behave import use_fixture
 from behave.model import Status
 import time
@@ -14,11 +15,11 @@ def before_all(context):
     context.browser = playwright.chromium.launch(headless=headless)
 
     # Instância dos page objects:
-    context.react = ServerestIndex(context)
+    context.serverest = ServerestIndex(context)
     # Instância do page_helpers:
     context.page_helper = PageHelper(context)
     # Instância do factory:
-    # context.factory = Factory(context)
+    context.factory = Factory(context)
 
     #mailosaur
     context.mailosaur_serverid = "zlp5m1hh"

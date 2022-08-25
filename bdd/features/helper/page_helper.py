@@ -4,7 +4,7 @@ varias vezes dentro dos mapeamentos dos sistemas no page_objects
 caso tenha alguma função de validação por exemplo, que serve tanto para um sistema quanto para outro.
 
 """
-from features.page_objects.React.react_page_index import *
+from features.page_objects.Serverest.serverest_page_index import *
 
 
 class PageHelper():
