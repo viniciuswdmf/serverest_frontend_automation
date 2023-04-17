@@ -1,0 +1,42 @@
+<testsuite name="specs.cadastro.Cadastro no site de teste" tests="2" errors="0" failures="1" skipped="0" time="12.478763" timestamp="2022-08-25T14:55:11.670139" hostname="CTNDELLGMJCP63"><testcase classname="specs.cadastro.Cadastro no site de teste" name="Realizar cadastro com erro -- @1.1 " status="failed" time="8.406882"><failure type="AssertionError" message="Locator expected to have text 'Nome é obrigatório'&#10;Actual value: None &#10;Call log:&#10;LocatorAssertions.to_have_text with timeout 5000ms&#10;waiting for selector &quot;.alert &gt; span&quot;">
+<![CDATA[
+Failing step: Então a "Nome é obrigatório" de erro deve ser exibida ... failed in 5.065s
+Location: features/specs/cadastro.feature:23
+Assertion Failed: Locator expected to have text 'Nome é obrigatório'
+Actual value: None 
+Call log:
+LocatorAssertions.to_have_text with timeout 5000ms
+waiting for selector ".alert > span"]]>
+</failure><system-out>
+<![CDATA[
+@scenario.begin
+
+  @cadastro_exception
+  Esquema do Cenário: Realizar cadastro com erro -- @1.1 
+    Dado que acesse o site ... passed in 2.502s
+    E que tenha sido gerado um usuario valido ... passed in 0.254s
+    E que tenha sido gerado um email valido ... passed in 0.002s
+    Dado que acesse o formulario de cadastro ... passed in 0.222s
+    Quando preencher as informações necessárias com "nome nao preenchido" ... passed in 0.362s
+    Então a "Nome é obrigatório" de erro deve ser exibida ... failed in 5.065s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="specs.cadastro.Cadastro no site de teste" name="Realizar cadastro com erro -- @1.2 " status="passed" time="4.071881"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @cadastro_exception
+  Esquema do Cenário: Realizar cadastro com erro -- @1.2 
+    Dado que acesse o site ... passed in 2.479s
+    E que tenha sido gerado um usuario valido ... passed in 0.193s
+    E que tenha sido gerado um email valido ... passed in 0.001s
+    Dado que acesse o formulario de cadastro ... passed in 0.200s
+    Quando preencher as informações necessárias com "email nao preenchido" ... passed in 0.265s
+    Então a "Email é obrigatório" de erro deve ser exibida ... passed in 0.933s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
