@@ -1,5 +1,5 @@
 body_elements = {
-    'TOAST_SUCESS'             : '//*[@id="toast-container"]',
+    'TOAST_SUCESS'             : '#root > div > div > h1',
     'TOAST_ERRO'               : '.toast-message',
     'MENU_MOVIMENTACAO'        : '#navbarSupportedContent > ul > li:nth-child(2) > a > i',
     'MENU_EXTRATO'             : '#navbarSupportedContent > ul > li:nth-child(3) > a',

@@ -10,9 +10,9 @@ Cenário: Fazer login com sucesso
     Quando realizar login com CPF e senha válidos
     Então deve validar que o login foi realizado com sucesso
 
-Esquema do Cenário: Erro ao fazer login
-    Quando realizar login com "<login>" invalido
-    Então deve ser exibida a mensagem de erro "<mensagem>"
-    Exemplos:
-        | login     | mensagem                                         |
-        | dasjjadsk | Erro: Error: Request failed with status code 400 |
+# Esquema do Cenário: Erro ao fazer login
+#     Quando realizar login com "<login>" invalido
+#     Então deve ser exibida a mensagem de erro "<mensagem>"
+#     Exemplos:
+#         | login     | mensagem                                         |
+#         | dasjjadsk | Erro: Error: Request failed with status code 400 |

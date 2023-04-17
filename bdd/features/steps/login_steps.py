@@ -4,7 +4,7 @@ import time
 @when(u'realizar login com CPF e senha válidos')
 def realizar_login_teste(context):
     context.serverest.login.acessar_site_login(context)
-    context.serverest.login.fazer_login_com_parametros(context, "tarcisio@cy.com", "1")
+    context.serverest.login.efetuar_login_valido(context, "teste@qa.com", "123456")
 
 
 @then(u'deve validar que o login foi realizado com sucesso')
